@@ -1,0 +1,4 @@
+HTTP-*/
+HTTP-*.tar.gz
+.build/
+cpanfile.snapshot

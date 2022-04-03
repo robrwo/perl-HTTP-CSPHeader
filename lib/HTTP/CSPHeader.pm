@@ -7,6 +7,7 @@ use Moo;
 use Fcntl qw/ O_NONBLOCK O_RDONLY /;
 use List::Util 1.29 qw/ pairmap pairs /;
 use Math::Random::ISAAC;
+use Ref::Util qw/ is_plain_arrayref /;
 use Types::Standard qw/ ArrayRef Bool HashRef Str /;
 
 # RECOMMEND PREREQ: Math::Random::ISAAC::XS
@@ -33,6 +34,7 @@ has nonces_for => (
     is      => 'lazy',
     isa     => ArrayRef [Str],
     builder => sub { return [] },
+    coerce  => sub { my $val = is_plain_arrayref( $_[0] ) ? $_[0] : [ $_[0] ] },
 );
 
 has nonce => (

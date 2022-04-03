@@ -82,4 +82,19 @@ SKIP: {
 
 }
 
+subtest 'corce nonces_for' => sub {
+
+    my $h = HTTP::CSPHeader->new(
+        nonces_for => 'script-src',
+        policy     => {
+            "script-src" => q['self'],
+            "style-src"  => q['self'],
+        },
+    );
+
+    isa_ok $h, 'HTTP::CSPHeader';
+
+    is_deeply $h->nonces_for, [qw/ script-src /], 'nonces_for';
+};
+
 done_testing;

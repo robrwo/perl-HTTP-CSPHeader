@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Bux Fixes]
+  - Readonly is enforced `_base_policy` and `nonces_for` attributes.
+
   [Documentation]
   - Added missing note to Changes.
 

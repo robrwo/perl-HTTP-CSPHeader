@@ -9,11 +9,10 @@ use Moo;
 use Fcntl qw/ O_NONBLOCK O_RDONLY /;
 use List::Util 1.29 qw/ pairmap pairs /;
 use Math::Random::ISAAC;
-use Ref::Util qw/ is_plain_arrayref /;
-use Types::Standard qw/ ArrayRef Bool HashRef Str /;
+use Types::Standard qw/ ArrayRef is_ArrayRef Bool HashRef Str /;
 
 # RECOMMEND PREREQ: Math::Random::ISAAC::XS
-# RECOMMEND PREREQ: Ref::Util::XS
+# RECOMMEND PREREQ: Type::Tiny::XS
 
 use namespace::autoclean;
 
@@ -134,7 +133,7 @@ has nonces_for => (
     is      => 'lazy',
     isa     => ArrayRef [Str],
     builder => sub { return [] },
-    coerce  => sub { my $val = is_plain_arrayref( $_[0] ) ? $_[0] : [ $_[0] ] },
+    coerce  => sub { my $val = is_ArrayRef( $_[0] ) ? $_[0] : [ $_[0] ] },
 );
 
 =attr nonce

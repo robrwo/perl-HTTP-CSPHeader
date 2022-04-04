@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Enhancements]
+  - Removed Ref::Util from dependencies, but added Type::Tiny::XS as recommended.
+
   [Documentation]
   - Added missing note to Changes.
 

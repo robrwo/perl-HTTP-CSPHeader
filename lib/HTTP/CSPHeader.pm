@@ -9,7 +9,6 @@ use Moo;
 use Fcntl qw/ O_NONBLOCK O_RDONLY /;
 use List::Util 1.29 qw/ pairmap pairs /;
 use Math::Random::ISAAC;
-use MooX::Const v0.5.2;
 use Ref::Util qw/ is_plain_arrayref /;
 use Types::Standard qw/ ArrayRef Bool HashRef Str /;
 
@@ -73,7 +72,7 @@ There is no validation of these values.
 =cut
 
 has _base_policy => (
-    is       => 'const',
+    is       => 'ro',
     isa      => HashRef,
     required => 1,
     init_arg => 'policy',
@@ -132,9 +131,8 @@ cancel out that value.
 =cut
 
 has nonces_for => (
-    is      => 'const',
+    is      => 'lazy',
     isa     => ArrayRef [Str],
-    lazy    => 1,
     builder => sub { return [] },
     coerce  => sub { my $val = is_plain_arrayref( $_[0] ) ? $_[0] : [ $_[0] ] },
 );

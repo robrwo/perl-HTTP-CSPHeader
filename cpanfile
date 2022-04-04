@@ -5,7 +5,6 @@ requires "Fcntl" => "0";
 requires "List::Util" => "1.29";
 requires "Math::Random::ISAAC" => "0";
 requires "Moo" => "0";
-requires "MooX::Const" => "v0.5.2";
 requires "Ref::Util" => "0";
 requires "Types::Standard" => "0";
 requires "namespace::autoclean" => "0";

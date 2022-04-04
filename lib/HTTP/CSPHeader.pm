@@ -171,14 +171,17 @@ sub _build_nonce {
 
 =attr header
 
-This is the value of the header.
+This is the value of the header, generated from the L</policy>.
+
+This is a read-only accessor.
 
 =cut
 
 has header => (
-    is      => 'lazy',
-    isa     => Str,
-    clearer => '_clear_header',
+    is       => 'lazy',
+    isa      => Str,
+    clearer  => '_clear_header',
+    init_arg => undef,
 );
 
 sub _build_header {

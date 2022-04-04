@@ -89,7 +89,9 @@ you can override the `_build_nonce` method in a subclass.
 
 ## header
 
-This is the value of the header.
+This is the value of the header, generated from the ["policy"](#policy).
+
+This is a read-only accessor.
 
 # METHODS
 

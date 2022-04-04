@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}
   [Enhancements]
   - Removed Ref::Util from dependencies, but added Type::Tiny::XS as recommended.
 
+  [Bug Fixes]
+  - Disallow header being set from the constructor.
+
   [Documentation]
   - Added missing note to Changes.
 

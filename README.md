@@ -113,11 +113,50 @@ appended to it.  Otherwise the change will overwrite the value.
 
 If the value if `undef`, then the directive will be deleted.
 
+# EXAMPLES
+
+## Mojolicious
+
+You can use this with [Mojolicious](https://metacpan.org/pod/Mojolicious):
+
+```perl
+use HTTP::CSPHeader;
+
+use feature 'state';
+
+$self->hook(
+  before_dispatch => sub ($c) {
+
+    state $csp = HTTP::CSPHeader->new(
+        policy => {
+            'default-src' => q['self'],
+            'script-src'  => q['self'],
+        },
+        nonces_for => 'script-src',
+    );
+
+    $csp->reset;
+
+    $c->stash( csp_nonce => $csp->nonce );
+
+    $c->res->headers->content_security_policy( $csp->header );
+  }
+);
+```
+
+and in your templates, you can use the following for inline scripts:
+
+<div>
+    <script nonce="<%= $csp_nonce %>">
+    ...
+    </script>
+</div>
+
+If you do not need the nonce, then you might consider using [Mojolicious::Plugin::CSPHeader](https://metacpan.org/pod/Mojolicious%3A%3APlugin%3A%3ACSPHeader).
+
 # SEE ALSO
 
 [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
-
-[Mojolicious::Plugin::CSPHeader](https://metacpan.org/pod/Mojolicious%3A%3APlugin%3A%3ACSPHeader)
 
 # SOURCE
 

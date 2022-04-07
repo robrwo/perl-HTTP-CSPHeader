@@ -288,13 +288,7 @@ You can use this with L<Mojolicious>:
 
 and in your templates, you can use the following for inline scripts:
 
-=begin html
-
-<script nonce="<%= $csp_nonce %>">
-...
-</script>
-
-=end html
+  <script nonce="<%= $csp_nonce %>"> ... </script>
 
 If you do not need the nonce, then you might consider using L<Mojolicious::Plugin::CSPHeader>.
 

@@ -146,11 +146,9 @@ $self->hook(
 
 and in your templates, you can use the following for inline scripts:
 
-<div>
-    <script nonce="<%= $csp_nonce %>">
-    ...
-    </script>
-</div>
+```
+<script nonce="<%= $csp_nonce %>"> ... </script>
+```
 
 If you do not need the nonce, then you might consider using [Mojolicious::Plugin::CSPHeader](https://metacpan.org/pod/Mojolicious%3A%3APlugin%3A%3ACSPHeader).
 

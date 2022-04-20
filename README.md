@@ -100,6 +100,9 @@ This is a read-only accessor.
 This resets any changes to the ["policy"](#policy) and clears the ["nonce"](#nonce).
 It should be run at the start of each HTTP request.
 
+If you never make use of the nonce, and never ["amend"](#amend) the headers,
+then you do not need to run this method.
+
 ## amend
 
 ```perl

@@ -195,6 +195,9 @@ sub _build_header {
 This resets any changes to the L</policy> and clears the L</nonce>.
 It should be run at the start of each HTTP request.
 
+If you never make use of the nonce, and never L</amend> the headers,
+then you do not need to run this method.
+
 =cut
 
 sub reset {

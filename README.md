@@ -111,7 +111,7 @@ This amends the ["policy"](#policy).
 If the `$directive` starts with a `+` then the value will be
 appended to it.  Otherwise the change will overwrite the value.
 
-If the value if `undef`, then the directive will be deleted.
+If the value is `undef`, then the directive will be deleted.
 
 # EXAMPLES
 

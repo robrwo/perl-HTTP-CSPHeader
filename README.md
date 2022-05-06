@@ -159,6 +159,8 @@ If you do not need the nonce, then you might consider using [Mojolicious::Plugin
 
 [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
 
+[HTTP::SecureHeaders](https://metacpan.org/pod/HTTP%3A%3ASecureHeaders)
+
 # SOURCE
 
 The development version is on github at [https://github.com/robrwo/perl-HTTP-CSPHeader](https://github.com/robrwo/perl-HTTP-CSPHeader)

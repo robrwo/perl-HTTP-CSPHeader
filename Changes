@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Documentation]
+    - Added HTTP::SecureHeaders to SEE ALSO.
 
 v0.1.2    2022-04-20 20:41:14+01:00 Europe/London
   [Documentation]

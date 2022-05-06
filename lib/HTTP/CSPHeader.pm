@@ -299,4 +299,6 @@ If you do not need the nonce, then you might consider using L<Mojolicious::Plugi
 
 L<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy>
 
+L<HTTP::SecureHeaders>
+
 =cut

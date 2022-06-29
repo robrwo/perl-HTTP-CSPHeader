@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+
+v0.1.3    2022-06-29 17:16:15+01:00 Europe/London
   [Enhancements]
   - The nonce combined with the PID to ensure it is unique after forking.
 

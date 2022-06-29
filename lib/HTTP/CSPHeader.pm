@@ -301,4 +301,6 @@ L<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Pol
 
 L<HTTP::SecureHeaders>
 
+L<Plack::Middleware::CSP>
+
 =cut

@@ -166,7 +166,7 @@ sub _build_nonce {
         Math::Random::ISAAC->new( unpack( "C*", $data ) );
     };
 
-    return sprintf( '%x', $rng->irand );
+    return sprintf( '%x', $rng->irand ^ $$ );
 }
 
 =attr header

@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Enhancements]
+  - The nonce combined with the PID to ensure it is unique after forking.
+
   [Documentation]
   - Added HTTP::SecureHeaders and Plack::Middleware::CSP to SEE ALSO.
 

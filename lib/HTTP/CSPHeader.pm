@@ -146,6 +146,9 @@ from L<Math::Random::ISAAC>.  The RNG is seeded by F</dev/urandom>.
 If you do not have F</dev/urandom> or you want to change how it is generated,
 you can override the C<_build_nonce> method in a subclass.
 
+Note that you should never make an assumption about the format of the
+nonce, as the source may change in future versions.
+
 =cut
 
 has nonce => (

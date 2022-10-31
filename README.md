@@ -87,6 +87,9 @@ from [Math::Random::ISAAC](https://metacpan.org/pod/Math%3A%3ARandom%3A%3AISAAC)
 If you do not have `/dev/urandom` or you want to change how it is generated,
 you can override the `_build_nonce` method in a subclass.
 
+Note that you should never make an assumption about the format of the
+nonce, as the source may change in future versions.
+
 ## header
 
 This is the value of the header, generated from the ["policy"](#policy).

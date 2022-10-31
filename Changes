@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Documentation]
+  - Add note that the source and format of the nonce may change in the future.
 
 v0.1.4    2022-07-05 12:08:50+01:00 Europe/London
   [Documentation]

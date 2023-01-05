@@ -2,7 +2,7 @@ package HTTP::CSPHeader;
 
 # ABSTRACT: manage dynamic content security policy headers
 
-use v5.10;
+use v5.14;
 
 use Moo;
 

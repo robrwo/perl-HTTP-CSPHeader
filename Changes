@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Incompatible Changes]
+  - Minimum Perl version is v5.14.
+
   [Documentation]
   - Add note that the source and format of the nonce may change in the future.
 

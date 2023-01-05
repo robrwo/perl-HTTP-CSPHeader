@@ -11,6 +11,9 @@ Revision history for {{ $dist->name }}
 
   - Bumped copyright year.
 
+  [Other]
+  - Added GitHub Actions to run tests.
+
 v0.1.4    2022-07-05 12:08:50+01:00 Europe/London
   [Documentation]
   - Fix typo in Changes.

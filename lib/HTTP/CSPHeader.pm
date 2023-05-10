@@ -155,10 +155,10 @@ has nonce_seed_size => (
 This is the random nonce that is added to directives in L</nonces_for>.
 
 The nonce is a hex string based on a random 32-bit number, which is generated
-from L<Math::Random::ISAAC>.  The RNG is seeded by F</dev/urandom>.
+from L<Math::Random::ISAAC>.  The RNG is seeded by L<Crypt::URandom>.
 
-If you do not have F</dev/urandom> or you want to change how it is generated,
-you can override the C<_build_nonce> method in a subclass.
+If you want to change how it is generated, you can override the C<_build_nonce>
+method in a subclass.
 
 Note that you should never make an assumption about the format of the
 nonce, as the source may change in future versions.

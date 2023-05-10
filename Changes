@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Enhancments]
+  - Use Crypt::URandom to seed the RNG.
 
 v0.2.1    2023-01-11 14:43:34+00:00 Europe/London
   No Changes from v0.2.0.

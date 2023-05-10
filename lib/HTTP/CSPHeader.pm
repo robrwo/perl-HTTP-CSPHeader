@@ -6,6 +6,7 @@ use v5.14;
 
 use Moo;
 
+use Crypt::URandom 0.37 qw/ urandom_ub /;
 use Fcntl qw/ O_NONBLOCK O_RDONLY /;
 use List::Util 1.29 qw/ pairmap pairs /;
 use Math::Random::ISAAC;
@@ -162,10 +163,7 @@ sub _build_nonce {
     my ($self) = @_;
 
     state $rng = do {
-        sysopen( my $fh, '/dev/urandom', O_NONBLOCK | O_RDONLY ) or die $!;
-        sysread( $fh, my $data, 16 )                             or die $!;
-        close $fh;
-
+        my $data = urandom_ub(16);
         Math::Random::ISAAC->new( unpack( "C*", $data ) );
     };
 

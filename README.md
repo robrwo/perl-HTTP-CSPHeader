@@ -4,7 +4,7 @@ HTTP::CSPHeader - manage dynamic content security policy headers
 
 # VERSION
 
-version v0.2.2
+version v0.3.0
 
 # SYNOPSIS
 

@@ -10,6 +10,7 @@ requires "Types::Common" => "2.000000";
 requires "namespace::autoclean" => "0";
 requires "perl" => "v5.14.0";
 recommends "Math::Random::ISAAC::XS" => "0";
+recommends "Ref::Util::XS" => "0";
 recommends "Type::Tiny::XS" => "0";
 
 on 'test' => sub {

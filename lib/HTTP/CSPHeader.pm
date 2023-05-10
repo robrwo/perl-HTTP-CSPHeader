@@ -13,6 +13,7 @@ use Math::Random::ISAAC;
 use Types::Common 2.000000 qw/ ArrayRef is_ArrayRef Bool HashRef IntRange Str /;
 
 # RECOMMEND PREREQ: Math::Random::ISAAC::XS
+# RECOMMEND PREREQ: Ref::Util::XS
 # RECOMMEND PREREQ: Type::Tiny::XS
 
 use namespace::autoclean;

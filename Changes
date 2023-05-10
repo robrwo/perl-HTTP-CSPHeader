@@ -6,7 +6,7 @@ Revision history for {{ $dist->name }}
 
   - Add nonce_seed_size attribute to alter the seed size.
 
-  - Recommend prerequisite ref::Util::XS.
+  - Recommend prerequisite Ref::Util::XS.
 
   [Other]
   - Use Types::Common over Types::Standard.

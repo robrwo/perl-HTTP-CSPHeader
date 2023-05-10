@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}
   [Enhancments]
   - Use Crypt::URandom to seed the RNG.
 
+  [Other]
+  - Use Types::Common over Types::Standard.
+
 v0.2.1    2023-01-11 14:43:34+00:00 Europe/London
   No Changes from v0.2.0.
 

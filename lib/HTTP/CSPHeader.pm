@@ -10,7 +10,7 @@ use Crypt::URandom 0.37 qw/ urandom_ub /;
 use Fcntl qw/ O_NONBLOCK O_RDONLY /;
 use List::Util 1.29 qw/ pairmap pairs /;
 use Math::Random::ISAAC;
-use Types::Standard qw/ ArrayRef is_ArrayRef Bool HashRef Str /;
+use Types::Common 2.000000 qw/ ArrayRef is_ArrayRef Bool HashRef Str /;
 
 # RECOMMEND PREREQ: Math::Random::ISAAC::XS
 # RECOMMEND PREREQ: Type::Tiny::XS

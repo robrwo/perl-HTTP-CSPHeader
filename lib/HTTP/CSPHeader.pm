@@ -10,7 +10,7 @@ use Crypt::URandom 0.37 qw/ urandom_ub /;
 use Fcntl qw/ O_NONBLOCK O_RDONLY /;
 use List::Util 1.29 qw/ pairmap pairs /;
 use Math::Random::ISAAC;
-use Types::Common 2.000000 qw/ ArrayRef is_ArrayRef Bool HashRef Str /;
+use Types::Common 2.000000 qw/ ArrayRef is_ArrayRef Bool HashRef IntRange Str /;
 
 # RECOMMEND PREREQ: Math::Random::ISAAC::XS
 # RECOMMEND PREREQ: Type::Tiny::XS
@@ -137,6 +137,18 @@ has nonces_for => (
     coerce  => sub { my $val = is_ArrayRef( $_[0] ) ? $_[0] : [ $_[0] ] },
 );
 
+=attr nonce_seed_size
+
+This is the size of the random seed data for the L</nonce>. It can be an integer between 16 and 256.
+
+=cut
+
+has nonce_seed_size => (
+    is      => 'lazy',
+    isa     => IntRange[ 16, 256 ],
+    default => 16,
+);
+
 =attr nonce
 
 This is the random nonce that is added to directives in L</nonces_for>.
@@ -163,7 +175,7 @@ sub _build_nonce {
     my ($self) = @_;
 
     state $rng = do {
-        my $data = urandom_ub(16);
+        my $data = urandom_ub( $self->nonce_seed_size );
         Math::Random::ISAAC->new( unpack( "C*", $data ) );
     };
 

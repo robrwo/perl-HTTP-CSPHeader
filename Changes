@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}
   [Enhancments]
   - Use Crypt::URandom to seed the RNG.
 
+  - Add nonce_seed_size attribute to alter the seed size.
+
   [Other]
   - Use Types::Common over Types::Standard.
 

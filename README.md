@@ -77,6 +77,10 @@ This does not validate the values.
 Note that if a directive allows `'unsafe-inline'` then a nonce may
 cancel out that value.
 
+## nonce\_seed\_size
+
+This is the size of the random seed data for the ["nonce"](#nonce). It can be an integer between 16 and 256.
+
 ## nonce
 
 This is the random nonce that is added to directives in ["nonces\_for"](#nonces_for).

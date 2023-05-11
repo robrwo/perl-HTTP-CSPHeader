@@ -18,7 +18,7 @@ use Types::Common 2.000000 qw/ ArrayRef is_ArrayRef Bool HashRef IntRange Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.3.1';
+our $VERSION = 'v0.3.2';
 
 =head1 SYNOPSIS
 

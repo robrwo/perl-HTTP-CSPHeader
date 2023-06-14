@@ -40,7 +40,7 @@ our $VERSION = 'v0.3.2';
 
   $csp->reset;
 
-  $h->amend(
+  $csp->amend(
     "+script-src" => "https://captcha.example.com",
     "+style-src"  => "https://captcha.example.com",
   );

@@ -27,7 +27,7 @@ my $h = HTTP::Headers->new;
 
 $csp->reset;
 
-$h->amend(
+$csp->amend(
   "+script-src" => "https://captcha.example.com",
   "+style-src"  => "https://captcha.example.com",
 );

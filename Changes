@@ -6,6 +6,8 @@ Revision history for {{ $dist->name }}
 
   - Removed use of Test::Most.
 
+  - Enable "use strict" Kwalitee test.
+
 v0.3.2    2023-06-14 15:32:22+01:00 Europe/London
   [Documentation]
   - Fixed typo in SYNOPSIS.

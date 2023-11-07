@@ -19,7 +19,6 @@ on 'test' => sub {
   requires "Plack::Middleware::ContentLength" => "0";
   requires "Plack::Middleware::Head" => "0";
   requires "Test2::V0" => "0";
-  requires "Test::Differences" => "0";
   requires "Test::More" => "0";
   requires "strict" => "0";
   requires "warnings" => "0";

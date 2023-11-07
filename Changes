@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}
   [Tests]
   - Removed unnecessary prerequisite.
 
+  - Added author tests for Changes.
+
 v0.3.3    2023-10-28 10:01:10+01:00 Europe/London
   [Tests]
   - Migrated to Test2.

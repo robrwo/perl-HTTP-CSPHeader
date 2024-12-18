@@ -31,6 +31,7 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
+  requires "Perl::Critic" => "1.156";
   requires "Pod::Coverage::TrustPod" => "0";
   requires "Test::CPAN::Changes" => "0.500002";
   requires "Test::CleanNamespaces" => "0.15";

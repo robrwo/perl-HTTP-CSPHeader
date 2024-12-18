@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+  [Tests]
+  - Added more author tests
 
 v0.4.0    2024-12-17 16:58:27+00:00 Europe/London
   [Enhancements]

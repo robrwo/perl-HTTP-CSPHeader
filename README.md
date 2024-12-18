@@ -176,11 +176,6 @@ Future releases may only support Perl versions released in the last ten (10) yea
 
 [Plack::Middleware::CSP](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3ACSP)
 
-## Reporting Security Vulnerabilities
-
-Security issues should not be reported on the bugtracker website.  Please see `SECURITY.md` for instructions how to
-report security vulnerabilities
-
 # SOURCE
 
 The development version is on github at [https://github.com/robrwo/perl-HTTP-CSPHeader](https://github.com/robrwo/perl-HTTP-CSPHeader)
@@ -194,6 +189,11 @@ Please report any bugs or feature requests on the bugtracker website
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired
 feature.
+
+## Reporting Security Vulnerabilities
+
+Security issues should not be reported on the bugtracker website.  Please see `SECURITY.md` for instructions how to
+report security vulnerabilities
 
 # AUTHOR
 

@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}
   [Documentation]
   - Documented security considerations.
 
+  - Add reference to the security policy in the module POD.
+
   [Tests]
   - Added more author tests
 

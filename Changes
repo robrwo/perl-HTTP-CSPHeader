@@ -7,7 +7,7 @@ Revision history for {{ $dist->name }}
   - Add reference to the security policy in the module POD.
 
   [Tests]
-  - Added more author tests
+  - Added more author tests.
 
   [Other]
   - Dist::Zilla::Plugin::Generate::ManifestSkip is no longer used.

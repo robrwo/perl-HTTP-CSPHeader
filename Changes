@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}
 
 {{$NEXT}}
+
+v0.4.1    2024-12-18 14:32:49+00:00 Europe/London
   [Documentation]
   - Documented security considerations.
 

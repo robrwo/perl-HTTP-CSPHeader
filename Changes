@@ -9,6 +9,8 @@ Revision history for {{ $dist->name }}
   [Tests]
   - Added more author tests.
 
+  - Removed unnecessary skip from tests.
+
   [Other]
   - Dist::Zilla::Plugin::Generate::ManifestSkip is no longer used.
 

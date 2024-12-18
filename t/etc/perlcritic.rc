@@ -18,8 +18,6 @@
 [Modules::ProhibitEvilModules]
 [Modules::RequireEndWithOne]
 [Objects::ProhibitIndirectSyntax]
-[Policy::TestingAndDebugging::RequireUseStrict]
-[Policy::TestingAndDebugging::RequireUseWarnings]
 [RegularExpressions::ProhibitCaptureWithoutTest]
 [Subroutines::ProhibitBuiltinHomonyms]
 [Subroutines::ProhibitExplicitReturnUndef]

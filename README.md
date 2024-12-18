@@ -157,6 +157,11 @@ and in your templates, you can use the following for inline scripts:
 
 If you do not need the nonce, then you might consider using [Mojolicious::Plugin::CSPHeader](https://metacpan.org/pod/Mojolicious%3A%3APlugin%3A%3ACSPHeader).
 
+# SECURITY CONSIDERATIONS
+
+If this is used in a forked environment, the object should not be initialised before forking if nonces are
+used. Otherwise the nonces may be shared between forks.
+
 # SUPPORT FOR OLDER PERL VERSIONS
 
 This module requires Perl v5.14 or later.

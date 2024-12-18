@@ -289,6 +289,11 @@ and in your templates, you can use the following for inline scripts:
 
 If you do not need the nonce, then you might consider using L<Mojolicious::Plugin::CSPHeader>.
 
+=head1 SECURITY CONSIDERATIONS
+
+If this is used in a forked environment, the object should not be initialised before forking if nonces are
+used. Otherwise the nonces may be shared between forks.
+
 =head1 SUPPORT FOR OLDER PERL VERSIONS
 
 This module requires Perl v5.14 or later.

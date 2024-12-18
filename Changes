@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}
   [Tests]
   - Added more author tests
 
+  [Other]
+  - Dist::Zilla::Plugin::Generate::ManifestSkip is no longer used.
+
 v0.4.0    2024-12-17 16:58:27+00:00 Europe/London
   [Enhancements]
   - The nonce is longer and contains mixed-case letters and numbers.

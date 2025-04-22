@@ -38,7 +38,7 @@ Security issues should not be reported on the bugtracker website. Please see
 The source code is available via GitHub at
 [https://github.com/robrwo/perl-HTTP-CSPHeader](https://github.com/robrwo/perl-HTTP-CSPHeader).
 
-Patches should be based on a recent fork of the `master` branch.
+Patches should be based on a recent fork of the `main` branch.
 
 This distribution is managed with [Dist::Zilla](https://dzil.org/).  This
 means that many of the usual files you might expect are not in the repository,

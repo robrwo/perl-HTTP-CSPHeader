@@ -1,19 +1,25 @@
-This is the Security Policy for the Perl distribution HTTP-CSPHeader.
+# Security Policy for the HTTP-CSPHeader distribution.
 
-The latest version of this Security Policy can be found at
-https://metacpan.org/dist/HTTP-CSPHeader.
+This is the Security Policy for HTTP-CSPHeader.
+The latest version of this policy can be found on the project
+[GitHub repository](https://github.com/robrwo/perl-HTTP-CSPHeader).
+
+Security vulnerabilities can be reported via the project
+[Security Advisories](https://github.com/robrwo/perl-HTTP-CSPHeader/security/advisories) website.
 
 This text is based on the CPAN Security Group's Guidelines for Adding
-a Security Policy to Perl Distributions (version 0.1.8).
+a Security Policy to Perl Distributions (version 1.2.0)
 https://security.metacpan.org/docs/guides/security-policy-for-authors.html
 
 # How to Report a Security Vulnerability
 
-Security vulnerabilties can be reported by e-mail to the current
-project maintainer(s) at <rrwo@cpan.org>.
+Security vulnerabilities can be reported via the project
+[Security Advisories](https://github.com/robrwo/perl-HTTP-CSPHeader/security/advisories) website.
 
 Please include as many details as possible, including code samples
-or test cases, so that we can reproduce the issue.
+or test cases, so that we can reproduce the issue.  Check that your
+report does not expose any sensitive data, such as passwords,
+tokens, or personal information.
 
 If you would like any help with triaging the issue, or if the issue
 is being actively exploited, please copy the report to the CPAN
@@ -75,12 +81,6 @@ this policy.
 
 The maintainer(s) will only commit to releasing security fixes for the
 latest version of HTTP-CSPHeader.
-
-Note that the HTTP-CSPHeader project only supports major
-versions of Perl released in the past ten (10) years, even though
-HTTP-CSPHeader will run on older versions of Perl.  If a
-security fix requires us to increase the minimum version of Perl that
-is supported, then we may do that.
 
 # Installation and Usage Issues
 

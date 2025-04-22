@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}
   [Documentation]
   - Added a How to Contribute document.
 
+  - Updated security policy.
+
 v0.4.1    2024-12-18 14:32:49+00:00 Europe/London
   [Documentation]
   - Documented security considerations.
